@@ -3,19 +3,13 @@ import Footer from './components/footer'
 
  
 import Secsion from './components/secsions'
-import { GoogleTagManager } from '@next/third-parties/google'
-import { GoogleAnalytics } from '@next/third-parties/google'
-
-
+ 
 
 
 export default function Homepage() {
   return (
     <>
  
-
- 
- <GoogleTagManager gtmId="GTM-XYZ" />
  
 <title>รับจ้างยิงแอดทำโฆษณาออนไลน์ 
 </title>

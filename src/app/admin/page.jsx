@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import Items from './Items';
+import Check from '../components/Check';
+
 
 const App = () => {
   const [title, setTitle] = useState('');
@@ -11,7 +13,7 @@ const App = () => {
   const [message, setMessage] = useState('');
   const [posts, setPosts] = useState([]);
 
-  // Fetch posts on component mount
+ 
   useEffect(() => {
     fetch('https://api-post.myads.dev/get')
       .then((response) => response.json())
@@ -50,6 +52,8 @@ const App = () => {
 
   return (
     <div>
+    <Check/>
+
     <form onSubmit={handleSubmit} className="upload-form">
  <div className="text-center">
   <a href="/admin/fb">add</a>

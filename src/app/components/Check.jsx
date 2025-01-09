@@ -1,10 +1,9 @@
-"use client";
- 
+
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
 
-export default function Home() {
+export default function Check() {
   const { data: session, status } = useSession();
   const router = useRouter();
 
@@ -13,7 +12,7 @@ export default function Home() {
   }
 
   if (!session) {
-    router.push("/");
+    router.push("/login");
     return null;
   }
 

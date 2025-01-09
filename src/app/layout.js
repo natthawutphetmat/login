@@ -1,11 +1,14 @@
  
-import { GoogleAnalytics } from '@next/third-parties/google'
-import { GoogleTagManager } from '@next/third-parties/google'
+// import { GoogleAnalytics } from '@next/third-parties/google'
+// import { GoogleTagManager } from '@next/third-parties/google'
+
+
+
 import Header from './components/headers'
 import Footer from './components/footer'
-import "./setyls/style.css"; // เปลี่ยนจาก "./setyls/style.css" เป็น "../styles/setyls/style.css"
-import "./setyls/nav.css"; // เปลี่ยนจาก "./setyls/style.css" เป็น "../styles/setyls/style.css"
-import "./setyls/form.css"; // เปลี่ยนจาก "./setyls/style.css" เป็น "../styles/setyls/style.css"
+import "./setyls/style.css";  
+import "./setyls/nav.css";  
+import "./setyls/form.css";  
 import "./setyls/globals.css";  
 import Profile from './profile/page';
 
@@ -65,9 +68,10 @@ export default function RootLayout({ children }) {
 
         <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
      
+    
+{/*     
         <GoogleTagManager gtmId="GTM-MNDXXQCF" />
-
-        <GoogleAnalytics gaId="G-X3BDJ31PJ0" />
+        <GoogleAnalytics gaId="G-X3BDJ31PJ0" /> */}
 
         <Footer/>
       </body>

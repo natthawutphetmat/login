@@ -1,0 +1,110 @@
+/* cart.css */
+.product-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.product-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.product-info {
+  padding: 10px;
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.product-price {
+  font-size: 18px;
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.quantity-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quantity-button {
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-button:hover {
+  background-color: #ddd;
+}
+
+.quantity-display {
+  font-size: 18px;
+  margin: 0 15px;
+}
+
+.add-to-cart-btn {
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #218838;
+}
+
+.product-card:hover .add-to-cart-btn {
+  background-color: #218838;
+}
+
+
+/* cart.css */
+
+/* เพิ่มการจัดสไตล์สำหรับยอดรวม */
+.total-price {
+  font-size: 18px;
+  color: #ff5722; /* สีที่เด่นชัด */
+  font-weight: bold;
+  margin-top: 20px;
+}
